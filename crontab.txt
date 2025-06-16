@@ -1,0 +1,1 @@
+0 * * * * /usr/bin/python3 /app/post_speedtest.py >> /var/log/cron.log 2>&1
