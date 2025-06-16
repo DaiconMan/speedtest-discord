@@ -3,12 +3,6 @@ name: Build & Publish Docker Image
 on:
   push:
     branches: [ main ]
-    paths:
-      - '**.py'
-      - '**.sh'
-      - '**.txt'
-      - 'Dockerfile'
-      - '.github/workflows/**'
 
 jobs:
   docker:
@@ -34,4 +28,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/${{ github.repository }}:latest
+          tags: ghcr.io/${{ github.repository_owner }}/speedtest-discord:latest
