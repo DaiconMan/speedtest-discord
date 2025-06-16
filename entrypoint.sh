@@ -1,2 +1,2 @@
 #!/bin/sh
-crond -f -l 8
+/usr/sbin/cron -f -l 8
